@@ -8,10 +8,10 @@ It reads three CSV files — *Degree Plan*, *Finished Courses*, and *Course Offe
 ---
 
 ## ✨ Why it’s useful
-* **Filters instantly.** Sees your finished courses and degree plan, so it blocks anything you already passed or can’t yet take. :contentReference[oaicite:0]{index=0}  
-* **Visual schedule grid.** Buttons numbered 0-54 become real slots (“ICS 108 del”) as you add a section. :contentReference[oaicite:1]{index=1}:contentReference[oaicite:2]{index=2}  
-* **Save & reload.** The chosen `Schedule` object is serialized to `SavedSchedule.dat` for one-click continue later. :contentReference[oaicite:3]{index=3}:contentReference[oaicite:4]{index=4}  
-* **Prereq / coreq logic.** `Student.canTake()` and `Schedule.coReqCheck()` enforce catalog rules. :contentReference[oaicite:5]{index=5}  
+* **Filters instantly.** The `Student` and `Course` classes compare your finished courses against the degree plan so invalid sections are hidden.
+* **Visual schedule grid.** `project (1).java` turns the 0-54 button grid into labelled slots (e.g., “ICS 108 del”).
+* **Save & reload.** `Schedule.java` serializes the object to `SavedSchedule.dat`.
+* **Prereq / coreq logic.** See `Student.java` → `canTake()` and `Schedule.java` → `coReqCheck()`.
 
 ---
 
